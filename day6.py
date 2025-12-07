@@ -55,7 +55,6 @@ def parttwo():
         operator = question[-1]
         answer = eval(operator.join(question[:-1]))
         total += answer
-        print(question, answer)
     print(total)
 
 
