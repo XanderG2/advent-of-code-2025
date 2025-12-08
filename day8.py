@@ -54,7 +54,27 @@ def partone():
             break
     print(math.prod(sorted([len(x) for x in circuits], reverse=True)[:3]))
 
-
+def parttwo():
+    coords = [tuple([int(x) for x in line.split(",")]) for line in INPUT]
+    distanceByCoords = {}
+    for a in (coords):
+        for b in (coords):
+            if a == b:
+                continue
+            if (b, a) not in distanceByCoords.keys():
+                distanceByCoords[(a, b)] = euclideanDistance3D(a, b)
+    distanceAndCoords = ((key, value) for key, value in distanceByCoords.items())
+    ordered = sorted(distanceAndCoords, key=lambda x: x[1])
+    distanceByCoords: dict = {key: value for key, value in ordered}
+    circuits = [{c} for c in coords]
+    for a, b in distanceByCoords.keys():
+        if not connected(a, b, circuits):
+            circuits = join(a, b, circuits)
+            if len(circuits) == 1:
+                print(a[0] * b[0])
+                break
+        
 
 if __name__ == "__main__":
     partone()
+    parttwo()
