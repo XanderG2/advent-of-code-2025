@@ -1,16 +1,15 @@
 with open("inputs/day3.txt", "r") as f:
-    INPUT = f.readlines()
+    INPUT: list[str] = f.readlines()
 
 def partone():
-    totalVoltage = 0
-    for banK in INPUT:
-        bank = banK.strip()
-        nums = []
+    totalVoltage: int = 0
+    for bank in [x.strip() for x in INPUT]:
+        nums: list[int] = []
         for numI in range(len(bank)):
-            num = bank[numI]
+            num: str = bank[numI]
             for num2i in range(1, len(bank)-numI):
-                num2I = numI + num2i
-                num2 = bank[num2I]
+                num2I: int = numI + num2i
+                num2: str = bank[num2I]
                 nums.append(int(num+num2))
         totalVoltage += max(nums)
     print(totalVoltage)
