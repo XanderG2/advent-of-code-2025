@@ -40,3 +40,7 @@ _All time in miliseconds_
 - Day 10:
 - Day 11:
 - Day 12:
+
+### Sidenote
+
+Apparently inputs come under copyright, I wasnt aware of this and have now removed them from all of my AoC repositories
