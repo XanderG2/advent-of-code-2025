@@ -39,5 +39,5 @@ def parttwo():
     
 
 if __name__ == "__main__":
-    #partone()
+    partone()
     parttwo()
