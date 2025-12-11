@@ -19,9 +19,9 @@ _All time in miliseconds_
 - Day 6: 10.7
 - Day 7: 9.42
 - Day 8: 2340
-- Day 9:
+- Day 9: 4600
 - Day 10:
-- Day 11:
+- Day 11: 1
 - Day 12:
 
 ## Breakdown of times to run (JS):
