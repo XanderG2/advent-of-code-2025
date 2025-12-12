@@ -1,7 +1,7 @@
 with open("inputs/day12.txt", "r") as f:
     INPUT = f.readlines()
 
-def partone():
+def day12():
     for line in range(len(INPUT)):
         lin = INPUT[line]
         if "#" in lin and INPUT[line+1].strip() == "" and "#" not in INPUT[line+3]:
@@ -25,4 +25,4 @@ def partone():
         
 
 if __name__ == "__main__":
-    partone()
+    day12()
