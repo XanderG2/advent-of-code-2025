@@ -13,7 +13,6 @@ def day12():
     squares = [sum([int(x) for x in z.split(":")[1].split()]) for z in regions]
     total = 0
     for size, square in zip(realsizes, squares):
-        print(size, square)
         x = size[0]
         y = size[1]
         if x < 3 or y < 3:

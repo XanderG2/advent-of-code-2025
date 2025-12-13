@@ -9,7 +9,7 @@ See my previous years in the sidebar.
 ## Breakdown of times to run:
 
 _Timed using Jupyter Notebook %%timeit_  
-_All time in miliseconds_
+_All time in miliseconds (except for Day 10)_
 
 - Day 1: 120
 - Day 2: 2230
@@ -20,9 +20,9 @@ _All time in miliseconds_
 - Day 7: 9.42
 - Day 8: 2340
 - Day 9: 4600
-- Day 10:
+- Day 10: over 2 hours
 - Day 11: 1
-- Day 12:
+- Day 12: 2
 
 ## Breakdown of times to run (JS):
 
