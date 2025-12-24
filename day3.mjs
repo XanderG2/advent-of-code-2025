@@ -8,9 +8,9 @@ function partone() {
   lines.forEach((line) => {
     let nums = new Array();
     for (let i = 0; i < line.length; i++) {
-      var num = line[i];
+      const num = line[i];
       for (let j = i + 1; j < line.length; j++) {
-        var num2 = line[j];
+        const num2 = line[j];
         nums.push(Number(num + num2));
       }
     }
